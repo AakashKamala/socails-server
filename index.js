@@ -24,7 +24,7 @@ mongoose.connection.on("error",(err)=>{
 })
 
 app.get("/",(req, res)=>{
-    return res.json("message", "alive")
+    return res.json({"message": "alive"})
 })
 
 const PORT=process.env.PORT||8008
