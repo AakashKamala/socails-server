@@ -36,7 +36,7 @@ const signup = async (req, res) => {
     
     try {
         // Input validation
-        if (!receivedUser.email || !receivedUser.password || !receivedUser.name) {
+        if (!receivedUser.email || !receivedUser.password || !receivedUser.username) {
             return res.status(400).json({
                 success: false,
                 message: "Missing required fields"
